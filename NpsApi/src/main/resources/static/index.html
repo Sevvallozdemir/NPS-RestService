@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPS Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>NPS Survey</h1>
+
+    <div id="login-section">
+        <h2>Login</h2>
+        <input type="text" id="phone-number" placeholder="Phone Number">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="survey-section" style="display:none;">
+        <h2>Survey</h2>
+        <p id="survey-question">On a scale of 1 to 10, how likely are you to recommend our service to a friend?</p>
+        <div id="rating-options"></div>
+        <button onclick="submitSurvey()">Submit</button>
+    </div>
+
+    <div id="result-section" style="display:none;">
+        <h2>Thank you!</h2>
+        <p>Your response has been submitted.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
